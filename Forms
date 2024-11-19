@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            display: block;
+            margin-bottom: 4px;
+        }
+        div{
+            background-color: rgba(255, 255, 255, 0.71);
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+        }
+        input[type="text"],input[type="email"],input[type="password"],select,textarea{    
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        input[type="submit"],input[type="reset"]{
+            background-color: rgba(253, 4, 4, 0.777);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        input:focus,textarea:focus,select:focus{
+            background-color: rgba(0, 255, 255, 0.441);
+        }
+        #select:hover,#reset:hover{
+            background-color: rgba(253, 4, 4, 0.419);
+            color: rgb(1, 7, 9);
+            transform: scale(1.05);
+            transition: 0.4s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="#">
+        <h2>Dont Have An Account ?Want to Join</h2>
+        <label for="name">Name :</label>
+        <input type="text" placeholder="Enter Your Name"><br>
+        <label for="email">Email :</label>
+        <input type="email" placeholder="Enter Email"><br>
+        <label for="cities">Cities :</label>
+        <select name="cities" id="select">
+                 <option value="select">Select</option>
+                 <option value="delhi">Delhi</option>
+                 <option value="vizag">Vizag</option>
+                 <option value="kakinada">Kakinada</option>
+                 <option value="mumbai">Mumbai</option>
+                 <option value="kolkata">Kolkata</option>
+                 <option value="phagwara">Phagwara</option>
+        </select><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea><br>
+        <label for="gender">Gender</label>
+        <input type="radio" value="male">Male
+        <input type="radio" value="female">Female
+        <input type="radio" value="others">Others<br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter a 6-digit Password"><br>
+        <label for="upload">Upload File : </label>
+        <input type="file"><br><br>
+        <input type="submit" id="select" value="Submit This Form">
+        <input type="reset" id="reset" value="Clear">
+    </form>
+    </div>
+</body>
+</html>
